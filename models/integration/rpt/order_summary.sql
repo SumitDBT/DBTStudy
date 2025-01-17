@@ -12,4 +12,4 @@ with final as (
         c.r_name
 )
 select *
-from final;
+from all;
