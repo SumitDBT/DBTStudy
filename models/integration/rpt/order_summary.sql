@@ -8,8 +8,8 @@ with final as (
     inner join 
         {{ ref('customer_details') }} c 
         on o.o_custkey = c.c_custkey
-    group by 
-        c.r_name
+    group by all
 )
 select *
-from all;
+from final;
+
